@@ -1,5 +1,9 @@
 # luma-jekyll
 
+<img src="./screenshot.png"/>
+
+**Note: This project is currently under development. Features and documentation may change.**
+
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
@@ -22,24 +26,23 @@ theme: luma-jekyll
 
 And then execute:
 
-    $ bundle
+```
+bundle
+````
 
 Or install it yourself as:
 
-    $ gem install luma-jekyll
-
-## Usage
-
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+```
+gem install luma-jekyll
+```
 
 ## Key Features
 
- - Responsive design looks great on all devices
-
+- Responsive design looks great on all devices
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/AlexsandroSA/luma-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
+Bug reports and pull requests are welcome on GitHub at [issues](https://github.com/AlexsandroSA/luma-jekyll). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
