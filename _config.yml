@@ -1,0 +1,39 @@
+# If you clone the luma repo and build locally, use this setting.
+theme: luma-jekyll
+
+# Sass configuration
+sass:
+    sass_dir: _sass
+    style: compressed
+
+# Site settings
+title: "Luma"
+description: "Minimalist dark theme for developers and writers"
+url: "http://luma.alexsandro-sa.com.br/"
+baseurl: "" # use "/" if your site is hosted at the root of the domain
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Permalinks
+permalink: /:categories/:title/
+
+# Plugins
+plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-sass-converter
+
+# Exclude from processing
+exclude:
+    - README.md
+    - Gemfile
+    - Gemfile.lock
+
+# Social media links
+social_links:
+    twitter: "https://twitter.com/seuusuario"
+    github: "https://github.com/seuusuario"
+    linkedin: "https://linkedin.com/in/seuusuario"

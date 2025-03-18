@@ -1,0 +1,164 @@
+---
+# Only the styles Sass file needs front matter (the dashes are enough)
+---
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// variables
+$color-primary: hsl(219, 76%, 40%);
+$color-secondary: hsl(269, 75%, 40%);
+$color-accent: hsl(358, 72%, 50%);
+
+$bg: #1A1A1D;
+$bg-accent: #2C2C2E;
+
+$bg-white: #f0f0f0;
+$bg-opacity: rgba(255, 255, 255, 0.1);
+
+$text-color: #f0f0f0;
+
+$font-family-default: 'Roboto', Arial, sans-serif;
+$font-family-feature: 'Pacifico', cursive;
+
+$link: hsl(330, 37%, 50%);
+$link-hover: hsl(330, 37%, 35%);
+
+// styles
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    color: $text-color;
+    background-color: $bg;
+    font-family:$font-family-default;
+}
+
+a {
+    color: $link;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 { color: $text-color; }
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.5rem; }   
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.5rem; } 
+
+p {
+    font-size: 1.25rem;
+}
+
+.wrapper {
+    width: calc(100% - 2rem);
+    max-width: 50rem;
+    margin-inline: auto;
+}
+
+// SITE HEADER
+.site-header {
+
+    .logo {
+        font-size: 3rem;
+        margin: 1rem 0;
+        padding: 0;
+        font-family: $font-family-feature;
+        text-shadow: 
+            2px 2px 0 $color-accent,
+            4px 4px 0 $color-secondary,
+            6px 6px 0 $color-primary;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    .nav-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2rem;
+
+        .nav-item {
+            margin-right: 1rem;
+        }
+    }
+}
+
+.site-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+// POST
+.post-list {
+    opacity: 1;
+    list-style: none;
+    padding: 0px;
+
+    .post-item {
+        border-bottom: 1px solid $bg-accent;
+        
+        animation: all 1s ease-out;
+        transition: all 0.5s ease;
+
+        &:hover {
+            background-color: $bg-opacity;
+        }
+    }
+
+    .post-link {
+        display: flex;
+        justify-content: space-between;        
+        align-items: center;
+        text-decoration: none;
+        padding: 1rem 0;
+        cursor: pointer;
+
+        .post-title {
+            font-size: 1.25rem;
+        }
+
+        .post-date {
+            color: #ffffff;
+        }
+    }
+}
+
+
+.hero {
+    margin: 5rem 0;
+
+    .hero-title {
+        margin: 0;
+    }
+
+    .hero-description {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+}
+
