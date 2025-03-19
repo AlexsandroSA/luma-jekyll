@@ -4,14 +4,14 @@ theme: luma-jekyll
 # Site settings
 title: "luma"
 description: "Minimalist dark theme for developers and writers"
-url: https://<your-github-username>.github.io
+url: http://luma.alexsandro-sa.com.br
 
 baseurl: ""
 
 # Sass configuration
 sass:
-    sass_dir: _sass
-    style: compressed
+  sass_dir: _sass
+  style: compressed
 
 # Build settings
 markdown: kramdown
@@ -19,22 +19,22 @@ highlighter: rouge
 
 # Plugins
 plugins:
-    - jekyll-feed
-    - jekyll-seo-tag
-    - jekyll-sitemap
-    - jekyll-sass-converter
-    - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-sass-converter
+  - jemoji
 
 # Exclude from processing
 exclude:
-    - README.md
-    - Gemfile
-    - Gemfile.lock
-    - "*.gem"
-    - "*.gemspec"
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - "*.gem"
+  - "*.gemspec"
 
 # Social media links
 social_links:
-    twitter: "https://twitter.com/<username>"
-    github: "https://github.com/<username>"
-    linkedin: "https://linkedin.com/in/<username>"
+  twitter: "https://twitter.com/<username>"
+  github: "https://github.com/<username>"
+  linkedin: "https://linkedin.com/in/<username>"
