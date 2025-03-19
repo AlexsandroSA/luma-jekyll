@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4"
   spec.add_runtime_dependency "jekyll-sass-converter", "~> 3.1.0"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
+  spec.add_runtime_dependency "jemoji", '~> 0.13.0'
 
   spec.add_development_dependency "bundler", "~> 2.2"
 end
