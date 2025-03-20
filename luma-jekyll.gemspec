@@ -23,7 +23,9 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
 
-  spec.required_ruby_version = '>= 3.0'
+  # spec.required_ruby_version = '>= 3.0'
+
+  # spec.add_development_dependency "bundler", "~> 2.2"
 
   spec.add_runtime_dependency "jekyll", "~> 4.4"
   spec.add_runtime_dependency "jekyll-feed", "~> 0.12"
@@ -32,6 +34,4 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-sass-converter", "~> 3.1.0"
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jemoji", '~> 0.13.0'
-
-  spec.add_development_dependency "bundler", "~> 2.2"
 end

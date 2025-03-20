@@ -1,5 +1,6 @@
 # If you clone the luma repo and build locally, use this setting.
-theme: luma-jekyll
+theme: luma-jekyll # rename to jekyll-theme-luma
+remote_theme: luma-jekyll
 
 # Site settings
 title: "luma"
@@ -12,19 +13,6 @@ baseurl: ""
 sass:
   sass_dir: _sass
   style: compressed
-
-# Build settings
-markdown: kramdown
-highlighter: rouge
-
-# Plugins
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-sass-converter
-  - jekyll-include-cache
-  - jemoji
 
 # Exclude from processing
 exclude:
