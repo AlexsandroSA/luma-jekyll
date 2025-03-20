@@ -4,21 +4,21 @@ Gem::Specification.new do |spec|
   spec.name          = "luma-jekyll"
   spec.version       = "0.1.1"
   spec.licenses      = ['MIT']
-  
+
   spec.authors       = ["Alexsandro Silva Alves"]
   spec.email         = ["luma@alexsandro-sa.com.br"]
 
   spec.summary       = "Minimalist dark theme for developers and writers"
   spec.homepage      = "http://luma.alexsandro-sa.com.br"
-  spec.license       = "MIT"   
+  spec.license       = "MIT"
 
-  spec.metadata      = { 
+  spec.metadata      = {
     "plugin_type" => "theme",
     "source_code_uri" => "https://github.com/AlexsandroSA/luma-jekyll",
-    "documentation_uri" => "https://github.com/AlexsandroSA/luma-jekyll/blob/main/README.md", 
+    "documentation_uri" => "https://github.com/AlexsandroSA/luma-jekyll/blob/main/README.md",
     "changelog_uri" => "https://github.com/AlexsandroSA/luma-jekyll/blob/main/CHANGELOG.md",
     "bug_tracker_uri" => "https://github.com/AlexsandroSA/luma-jekyll/issues",
-    "homepage_uri" => "http://luma.alexsandro-sa.com.br"  
+    "homepage_uri" => "http://luma.alexsandro-sa.com.br"
   }
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_data|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }

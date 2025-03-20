@@ -23,6 +23,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-sass-converter
+  - jekyll-include-cache
   - jemoji
 
 # Exclude from processing
