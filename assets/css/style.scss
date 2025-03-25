@@ -2,13 +2,9 @@
 # Only the styles Sass file needs front matter (the dashes are enough)
 ---
 
-// fonts
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 // base colors
-$dark: #000000;
-$light: #ffffff;
+$dark: #1a1a1d;
+$light: #c7c7c7;
 
 // theme colors
 $primary-color: #da0c81;
@@ -16,11 +12,11 @@ $secondary-color: #940B92;
 $tertiary-color: #4477CE;
 
 // body
-$body-bg: #1A1A1D;
-$body-color: #fff;
+$body-bg: $dark;
+$body-color: $light;
 
-$text-primary: #fff;
-$text-secondary: #888;
+$text-primary: #FFFFFF;
+$text-secondary: $light;
 
 $font-size-base: 1rem;
 $font-size-large: 4rem;
@@ -37,9 +33,9 @@ $font-family-base: $font-sans;
 $border-color: #2C2C2E;
 
 // links
-$link: $primary-color;
-$link-hover: $secondary-color;
-$link-text-decoration: none;
+$link-color: $text-primary;
+$link-text-decoration: $primary-color solid underline;
+$link-text-decoration-hover: $primary-color wavy underline;
 
 // styles
 *,
@@ -48,7 +44,12 @@ $link-text-decoration: none;
   box-sizing: border-box;
 }
 
-::selection, ::-moz-selection {
+::selection {
+  background: $primary-color;
+  color: $text-primary;
+}
+
+::-moz-selection {
   background: $primary-color;
   color: $text-primary;
 }
@@ -60,9 +61,9 @@ html {
   padding: 0;
 
   background:
-    radial-gradient(at 47.51177477720428% 77.80429594272077%, #9d2cd5 0px, transparent 50%),
-    radial-gradient(at 89.17473079504047% 81.98090692124104%, #d52cb9 0px, transparent 50%),
-    radial-gradient(at 16.445177515349542% 85.68019093078759%, #d52c64 0px, transparent 50%),
+    radial-gradient(at 47.51177477720428% 77.80429594272077%, $tertiary-color 0px, transparent 50%),
+    radial-gradient(at 89.17473079504047% 81.98090692124104%, $secondary-color 0px, transparent 50%),
+    radial-gradient(at 16.445177515349542% 85.68019093078759%, $primary-color 0px, transparent 50%),
     #000000;
 }
 
@@ -70,7 +71,7 @@ body {
   color: $body-color;
   background-color: $body-bg;
   font-family: $font-family-base;
-
+  min-height: 100vh;
   margin: 0.5rem;
 }
 
@@ -86,26 +87,18 @@ h4 { font-size: $font-size-base * 1.5; }
 h5 { font-size: $font-size-base * 1.5; }
 h6 { font-size: $font-size-base * 1.5; }
 
-p {
+p, ul li, ol li {
   color: $text-secondary;
 }
 
 a {
-  color: $link;
+  color: $link-color;
   text-decoration: $link-text-decoration;
 
-  [target=_blank]::after {
-    content: "↗";
-  }
-
   &:hover {
-    color: $link-hover;
-    text-decoration: $link-text-decoration;
+    color: initial;
+    text-decoration: $link-text-decoration-hover;
   }
-}
-
-ul li, ol li {
-  color: $text-secondary;
 }
 
 table {
@@ -179,10 +172,11 @@ table {
     }
 
     &__link {
-      color: $text-primary;
+      color: $link-color;
+      text-decoration: none;
 
       &:hover {
-        color: $primary-color;
+        text-decoration: $link-text-decoration-hover;
       }
     }
   }
@@ -192,6 +186,7 @@ table {
   margin-top: 10rem;
 
   &__title {
+    font-weight: bold;
     font-size: $font-size-base;
     margin: 0;
   }
@@ -274,7 +269,7 @@ table {
     padding: 0;
 
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   &__title {
@@ -301,7 +296,6 @@ table {
 
   &__subtitle {
     margin-top: 0;
-    // font-family: $font-serif;
   }
 
   &__description {
