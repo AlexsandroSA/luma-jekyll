@@ -4,13 +4,12 @@ theme: luma-jekyll
 # Site settings
 title: "luma"
 description: "Minimalist dark theme for developers and writers"
-url: http://luma.alexsandro-sa.com.br
 
 hero_title: Welcome 🧞‍♀️
 hero_subtitle: Minimalist dark blog theme for developers
 hero_description: Luma delivers a modern, fully responsive blog theme that excels on all devices. Customize effortlessly with flexible widget arrangements and accent colors to match your brand or personal style
 
-baseurl: ""
+baseurl: "/luma-jekyll"
 
 # Social Media Links
 #

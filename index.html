@@ -16,7 +16,7 @@ layout: home
   <ul class="post-list">
     {% for post in site.posts %}
     <li class="post-list__item">
-      <a href="{{ post.url }}" class="post-list__link">
+      <a href="{{ post.url | relative_url }}" class="post-list__link">
         <h4 class="post-list__title">{{ post.title }}</h4>
         <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date: "%b %-d, %Y" }}
