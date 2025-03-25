@@ -1,13 +1,30 @@
 # If you clone the luma repo and build locally, use this setting.
-theme: luma-jekyll # rename to jekyll-theme-luma
-remote_theme: luma-jekyll
+theme: luma-jekyll
 
 # Site settings
 title: "luma"
 description: "Minimalist dark theme for developers and writers"
 url: http://luma.alexsandro-sa.com.br
 
+hero_title: Welcome 🧞‍♀️
+hero_subtitle: Minimalist dark blog theme for developers
+hero_description: Luma delivers a modern, fully responsive blog theme that excels on all devices. Customize effortlessly with flexible widget arrangements and accent colors to match your brand or personal style
+
 baseurl: ""
+
+# Social Media Links
+#
+# Entry keys:
+# * name     Text rendered.
+# * url      Full URL of social profile.
+
+social_links:
+  - name: github
+    url: "https://github.com/<username>"
+  - name: twitter
+    url: "https://twitter.com/<username>"
+  - name: linkedin
+    url: "https://linkedin.com/in/<username>"
 
 # Sass configuration
 sass:
@@ -22,8 +39,3 @@ exclude:
   - "*.gem"
   - "*.gemspec"
 
-# Social media links
-social_links:
-  twitter: "https://twitter.com/<username>"
-  github: "https://github.com/<username>"
-  linkedin: "https://linkedin.com/in/<username>"

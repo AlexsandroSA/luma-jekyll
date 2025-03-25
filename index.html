@@ -5,15 +5,8 @@
 # To change the home page layout, edit the _layouts/home.html file.
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 #
-layout: default
+layout: home
 ---
-
-<div class="hero">
-  <h1 class="hero-title">Welcome 🧞‍♀️</h1>
-  <p class="hero-description">
-    Minimalist dark theme for developers and writers
-  </p>
-</div>
 
 <article class="post">
   <header class="post-heading">
@@ -22,10 +15,10 @@ layout: default
 
   <ul class="post-list">
     {% for post in site.posts %}
-    <li class="post-item">
-      <a href="{{ post.url }}" class="post-link">
-        <h4 class="post-title">{{ post.title }}</h4>
-        <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+    <li class="post-list__item">
+      <a href="{{ post.url }}" class="post-list__link">
+        <h4 class="post-list__title">{{ post.title }}</h4>
+        <time class="post-list__date" datetime="{{ post.date | date_to_xmlschema }}">
           {{ post.date | date: "%b %-d, %Y" }}
         </time>
       </a>
