@@ -1,14 +1,21 @@
-# luma-jekyll
+# 🧞‍♀️ luma-jekyll
+
+Luma is a minimalist dark blog theme for developers.
 
 <img src="./screenshot.png"/>
 
-**Note: This project is currently under development. Features and documentation may change.**
+[Live Demo](https://alexsandro-sa.com.br/luma-jekyll) or see what's new in the [CHANGELOG](https://github.com/AlexsandroSA/luma-jekyll/blob/main/CHANGELOG.md).
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+## ✨ Theme features
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+- Dark Theme
+- Jekyll 4.2+
+- Compatible with Github Pages
+- Bundled as a "theme gem" for easier installation/upgrading.
+- Analytics using Google Analytics
+- SEO & Performance Optimization
+- Responsive design looks great on all devices
+- Stylesheet built using SaSS
 
 ## Installation
 
@@ -28,21 +35,13 @@ And then execute:
 
 ```
 bundle
-````
+```
 
 Or install it yourself as:
 
 ```
 gem install luma-jekyll
 ```
-
-## Key Features
-
-- Responsive design looks great on all devices
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at [issues](https://github.com/AlexsandroSA/luma-jekyll). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## Development
 
@@ -52,6 +51,10 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `luma-jekyll.gemspec` accordingly.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at [issues](https://github.com/AlexsandroSA/luma-jekyll). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://www.contributor-covenant.org/) code of conduct.
 
 ## License
 
