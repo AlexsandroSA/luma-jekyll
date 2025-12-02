@@ -2,10 +2,60 @@
 layout: default
 ---
 
+{% comment %} Calculate reading time (average 200 words per minute) {% endcomment %}
+{% assign words = content | strip_html | number_of_words %}
+{% assign read_time = words | divided_by: 200 %}
+{% if read_time < 1 %}{% assign read_time = 1 %}{% endif %}
+
 <article class="page post">
     <header class="page__header">
       <h1 class="page__title">{{ page.title }}</h1>
+      <div class="post__meta">
+        <time class="post__date" datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%B %d, %Y" }}
+        </time>
+
+        <span class="post__reading-time">
+          <svg class="post__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <polyline points="12 6 12 12 16 14"></polyline>
+          </svg>
+          {{ read_time }} min read
+        </span>
+        {% if page.author or site.author.name %}
+          <span class="post__author">by {{ page.author | default: site.author.name }}</span>
+        {% endif %}
+      </div>
     </header>
 
-    {{ content }}
+    <div class="post__content">
+      {{ content }}
+    </div>
+
+    <footer class="post__footer">
+      <div class="author-box">
+        <div class="author-box__avatar">
+          <div class="author-box__initials">
+            {% assign author_name = page.author | default: site.author.name %}
+            {% assign initials = author_name | split: " " %}
+            {{ initials[0] | slice: 0 }}{{ initials[1] | slice: 0 | default: "" }}
+          </div>
+        </div>
+        <div class="author-box__info">
+          <h4 class="author-box__name">{{ page.author | default: site.author.name }}</h4>
+          {% if site.author.bio %}
+            <p class="author-box__bio">{{ site.author.bio }}</p>
+          {% endif %}
+          {% if site.social_links %}
+            <div class="author-box__social">
+              {% for link in site.social_links limit:3 %}
+                <a href="{{ link.url }}" class="author-box__link" target="_blank" rel="noopener noreferrer">
+                  {{ link.name }}
+                </a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </footer>
 </article>

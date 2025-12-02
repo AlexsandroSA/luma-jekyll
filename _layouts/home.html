@@ -3,17 +3,26 @@ layout: default
 ---
 
 <section class="hero">
-  <h1 class="hero__title">{{ site.hero_title }}</h1>
-  <h2 class="hero__subtitle">{{ site.hero_subtitle }}</h2>
+  <h1 class="hero__title">
+    {{ site.hero.title | default: "Welcome" }}
+  </h1>
+  <p class="hero__subtitle">
+    {{ site.hero.subtitle  | default: site.tagline }}
+  </p>
   <p class="hero__description">
-    {{ site.hero_description }}
+    {{ site.hero.description | default: site.description }}
   </p>
 </section>
 
-<article>
-  <header>
-    <h1>{{ page.title }}</h1>
+{% if page.title %}
+<section class="home-content">
+  <header class="home-content__header">
+    <h2 class="home-content__title">{{ page.title }}</h2>
   </header>
-
+  <div class="home-content__body">
+    {{ content }}
+  </div>
+</section>
+{% else %}
   {{ content }}
-</article>
+{% endif %}

@@ -1,23 +1,74 @@
 ---
 layout: post
-title:  "How to contributing"
+title:  "Contributing to Luma"
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+We love contributions! Whether you're fixing bugs, improving documentation, or adding new features—every contribution makes Luma better for everyone.
 
-Jekyll also offers powerful support for code snippets:
+## Ways to Contribute
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+There are many ways to help out:
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+- **Report bugs** — Found something broken? Open an issue
+- **Suggest features** — Have an idea? We'd love to hear it
+- **Improve docs** — Spotted a typo or unclear explanation? Fix it
+- **Submit code** — Bug fixes and features are always welcome
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+## Getting Started
+
+First, fork and clone the repository:
+
+```bash
+git clone https://github.com/AlexsandroSA/luma-jekyll.git
+cd luma-jekyll
+```
+
+Install dependencies and run the development server:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+## Making Changes
+
+1. **Create a branch** for your changes:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+2. **Make your changes** and test thoroughly
+
+3. **Commit** with a clear message:
+
+```bash
+git commit -m "Add: brief description of your change"
+```
+
+4. **Push** and open a Pull Request
+
+## Code Style
+
+Keep these guidelines in mind:
+
+- Use **2 spaces** for indentation in SCSS and HTML
+- Follow existing naming conventions
+- Comment complex logic
+- Test on multiple browsers when possible
+
+## Pull Request Guidelines
+
+- Keep PRs focused on a single change
+- Update documentation if needed
+- Add a clear description of what your PR does
+- Reference any related issues
+
+## Questions?
+
+- Open a [GitHub Issue][luma-issues] for bugs or features
+- Check existing issues before creating new ones
+
+Thank you for helping make Luma better! 🙌
+
+[luma-issues]: https://github.com/AlexsandroSA/luma-jekyll/issues

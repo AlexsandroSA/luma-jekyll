@@ -1,16 +1,15 @@
 <header class="site-header">
   <nav class="site-navbar">
     <h1 class="logo">
-      <a href="/">luma</a>
+      <a href="{{ '/' | relative_url }}">{{ site.title | downcase }}</a>
     </h1>
 
     <ul class="nav">
+      {%- for item in site.navigation -%}
       <li class="nav__item">
-        <a class="nav__link" href="{{ '/' | relative_url }}">Home</a>
+        <a class="nav__link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
       </li>
-      <li class="nav__item">
-        <a class="nav__link" href="{{ '/about' | relative_url }}">About</a>
-      </li>
+      {%- endfor -%}
     </ul>
   </nav>
 </header>
