@@ -6,7 +6,7 @@
 
 # Theme
 # If you clone the repo and build locally, use this setting.
-theme: luma-jekyll
+# theme: luma-jekyll
 
 # ============================================================
 # SITE SETTINGS
@@ -62,7 +62,7 @@ social_links:
     url: "https://twitter.com/alexsandro_sa"
     icon: twitter
   - name: LinkedIn
-    url: "https://www.linkedin.com/in/alexsandrosa/"
+    url: "https://www.linkedin.com/in/alexsandrosa"
     icon: linkedin
   # - name: Email
   #   url: "mailto:your.email@example.com"
