@@ -530,13 +530,11 @@ figure {
     margin-bottom: $spacing-lg;
   }
 
-
   p, li {
     font-size: clamp(1.0625rem, calc(0.5vw + 1rem), 1.25rem);
     line-height: $line-height-relaxed;
   }
 
-  // First paragraph emphasis
   > p:first-of-type {
     font-size: clamp(1.125rem, calc(0.75vw + 1rem), 1.375rem);
     color: $text-primary;
@@ -564,8 +562,6 @@ figure {
 
   &__item {
     margin-bottom: 0;
-
-    /* Use a cheap fade/translate animation and restrict transitioned properties for performance */
     animation: fade-in 0.45s ease-out both;
     transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 
